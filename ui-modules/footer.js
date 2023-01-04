@@ -1,5 +1,5 @@
 // typical footer
-export class footer {
+export class Footer {
     constructor() {
        
         // build
@@ -8,27 +8,27 @@ export class footer {
 
     // construct and append the UI elements
     build() {
-        let footerContainer = document.createElement('div');
+        const footerContainer = document.createElement('div');
         footerContainer.id = 'pluginFooterContainer';
     
-        let footerDiv = document.createElement('div');
+        const footerDiv = document.createElement('div');
         footerDiv.id = 'pluginFooterDiv';
         footerContainer.appendChild(footerDiv);
 
-        let footerIcon = document.createElement('img');
+        const footerIcon = document.createElement('img');
         footerIcon.src = 'https://formit3d.github.io/FormItExamplePlugins/SharedPluginFiles/img/plugin_manager_grey.png';
         footerIcon.id = 'pluginFooterIcon';
         footerDiv.appendChild(footerIcon);
     
-        let footerDescriptionText = document.createTextNode("Powered by FormIt JavaScript plugins");
+        const footerDescriptionText = document.createTextNode("Powered by FormIt JavaScript plugins");
         footerDiv.appendChild(footerDescriptionText);
     
-        let footerDivUL = document.createElement('ul');
+        const footerDivUL = document.createElement('ul');
         footerDiv.appendChild(footerDivUL);
     
-        let footerLearnAboutPluginsLI = document.createElement('li');
-        let footerLearnAboutPluginsLink = document.createElement('a');
-        let footerLearnAboutPluginsText = document.createTextNode("Learn about plugins");
+        const footerLearnAboutPluginsLI = document.createElement('li');
+        const footerLearnAboutPluginsLink = document.createElement('a');
+        const footerLearnAboutPluginsText = document.createTextNode("Learn about plugins");
         footerLearnAboutPluginsLink.appendChild(footerLearnAboutPluginsText);
         footerLearnAboutPluginsLink.setAttribute("href", "javascript:void(0);");
         footerDivUL.appendChild(footerLearnAboutPluginsLI);
@@ -38,9 +38,9 @@ export class footer {
             FormItInterface.CallMethod("FormIt.OpenURL", 'https://formit3d.github.io/FormItExamplePlugins/index.html');
         }
     
-        let footerLearnToBuildLI = document.createElement('li');
-        let footerLearnToBuildLink = document.createElement('a');
-        let footerLearnToBuildText = document.createTextNode("Build your own");
+        const footerLearnToBuildLI = document.createElement('li');
+        const footerLearnToBuildLink = document.createElement('a');
+        const footerLearnToBuildText = document.createTextNode("Build your own");
         footerLearnToBuildLink.appendChild(footerLearnToBuildText);
         footerLearnToBuildLink.setAttribute("href", "javascript:void(0);");
         footerDivUL.appendChild(footerLearnToBuildLI);

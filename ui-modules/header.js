@@ -1,5 +1,5 @@
-// typical header - can be used at the top of a whole plugin, or at the top of a subsection
-export default class header {
+// typical header - includes logo, optional subtitle, and optional navigation
+export default class Header {
     constructor(headerTitle, headerSubtitle) {
 
         // initialize the arguments
